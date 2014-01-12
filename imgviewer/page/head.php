@@ -7,4 +7,4 @@
 <script src="page/js/jquery.min.js"></script>
 <script src="page/js/bootstrap.min.js"></script>
 
-<title><?php echo $title." – ".str_replace("../", "", $file); ?></title>
+<title><?php echo $title." &ndash; ".str_replace("../", "", $file); ?></title>
