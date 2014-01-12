@@ -12,7 +12,7 @@
 				<?php
 					if ($available) {
 						echo '<li><a href="'.$file.'">Image</a></li>';
-						echo '<li><a href="page/download.php?image=<?php echo $file; ?>" type="application/octet-stream">Download</a></li>';
+						echo '<li><a href="page/download.php?image='.$file.'" type="application/octet-stream">Download</a></li>';
 					}
 				?>
 			</ul>
