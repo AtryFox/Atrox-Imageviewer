@@ -12,4 +12,4 @@ Den *Atrox Imageviewer* kann man zum Beispiel als Imageviewer mit [Monosnap](htt
 2. Nun kann der Seiten Titel noch in der Datei *page/config.php* angepasst werden. 
 
 ## Nutzung ##
-Alle PNG Bilder müssen im Hauptverzeichnis (also im Beispiel in *var/www/imgviewer/*) abgelegt werden. Ruft man nun das Bild ohne Dateiendung im Browser auf wird der *Atrox Imageviewer* erscheinen. Ruft man das Bild mit Dateieindung auf, so wird das Bild ganz normal angezeigt. Möchte man einen anderen Bildtyp (z.B. *.jpg*) nutzen, muss man diesen in der *.htaccess* Datei ändern.
+Alle PNG Bilder müssen im Hauptverzeichnis (also im Beispiel in */var/www/imgviewer/*) abgelegt werden. Ruft man nun das Bild ohne Dateiendung im Browser auf wird der *Atrox Imageviewer* erscheinen. Ruft man das Bild mit Dateieindung auf, so wird das Bild ganz normal angezeigt. Möchte man einen anderen Bildtyp (z.B. *.jpg*) nutzen, muss man diesen in der *.htaccess* Datei ändern.
