@@ -1,7 +1,7 @@
 Atrox Imageviewer
 =================
 
-Den *Atrox Imageviewer* kann man zum Beispiel als Imageviewer mit [Monosnap](https://www.monosnap.com/) oder [SahreX]https://getsharex.com/) nutzen. So lassen sich einfach zum Beispiel Screenshots erstellen und auf einer aufgeräumten Seite presäntieren.
+Den *Atrox Imageviewer* kann man zum Beispiel als Imageviewer mit [Monosnap](https://www.monosnap.com/) oder [SahreX](https://getsharex.com/) nutzen. So lassen sich einfach zum Beispiel Screenshots erstellen und auf einer aufgeräumten Seite presäntieren.
 
 ## Vorraussetzungen ##
 * PHP 5
