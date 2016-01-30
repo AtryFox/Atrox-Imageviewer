@@ -29,6 +29,6 @@
 		}
 	?>
 	<img src="page/image.php?image=<?php echo $file; ?>" class="img-thumbnail center-block">
-	<p style="text-align: center; padding-top: 5px; font-size:11px;">Last modified: <?php echo date("F d Y H:i:s.", filemtime($file)); ?></p>
+	<p class="filetime">Last modified: <?php echo date("d-m-Y H:i:s.", filemtime($file)); ?></p>
 	<?php include("footer.php"); ?>
 </div>

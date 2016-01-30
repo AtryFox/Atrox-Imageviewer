@@ -9,7 +9,7 @@ if(!$available) $file = "img/notfound.png";
 ?>
 
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 	<head>
 		<?php include("head.php"); ?>
 	</head>
