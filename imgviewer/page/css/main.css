@@ -18,11 +18,11 @@ hr {
 	font-size: 11px;
 }
 
-#credit {
+.credit {
 	font-size: 10px;
 }
 
-#credit iframe {
+.credit iframe {
 	margin: 0 auto;
 	display: block;
 }
