@@ -1,17 +1,28 @@
 Atrox Imageviewer
 =================
 
-Der Atrox Imageviewer (**AIv**) stellt Screenshots auf einer aufgeräumten Seite dar. Dabei lässt sich das Bild ganz normal mit Dateiendung, um das Bild direkt aufzurufen, oder ohne Dateiendung, um das Bild eingebettet zu zeigen, aufrufen. In Verbindung mit [Monosnap](https://www.monosnap.com/) oder [ShareX](https://getsharex.com/) erhält man so einen eigenen Imageuploader mit Overview-Page und Direktanzeige des Bilds.
+The Atrox Imageviewer (**AIv**) displays your screenshots or images on a nice and clean page. In combination with e.g. [Monosnap](https://www.monosnap.com/) or [ShareX](https://getsharex.com/), you can use it as your own imageuploader service.
 
-## Vorraussetzungen ##
+
+## Requirements ##
 * Apache 2
 * mod_rewrite
 * PHP 5.6
 
 ## Installation ##
-1. Das Verzeichnis *imgviewer* auf einem belibigen Webspace, der die Vorraussetzungen erfüllt, hochladen.
-2. RewriteBase (`.htaccess` Zeile 2) anpassen. Diese RewriteBase muss auf `page/` zeigen. Für `example.tld/imgviewer/page/` muss also `/imgviewer/page/` eingetragen werden.
-3. Der Seitentitel lässt sich über die Datei `page/config.php` anpassen.
+1. Upload the directory `imgviewer/` with all it's files and folders to your webspace.
+2. Open up `imgviewer/index.php` in your browser. Your server now creates a `.htaccess` file with all that's needed.
+3. Done! You can now start uploading images into the main directory.
 
-## Nutzung ##
-Alle PNG Bilder müssen im Hauptverzeichnis (also zum Beispiel in `/imgviewer/`) abgelegt werden. Ruft man nun das Bild ohne Dateiendung im Browser auf wird der AIv erscheinen. Ruft man das Bild mit Dateiendung auf, so wird das Bild ganz normal angezeigt. Möchte man einen anderen Bildtyp (z.B. *.jpg*) nutzen, müssen die entsprechenden Einstellungen in den Konfigurationen `.htaccess` und `config.php` angepasst werden.
+
+## Using ##
+All images have to be uploaded into the main directory (e.g. `/imgviewer/`) of the AIv. If you now open up an image in this directory w/o its file extension, the AIv will appear. If you open up the same image w/ file extension, it will be displayed in the usual way.
+
+
+## Configuration ##
+A configuration is not necessarily required. If you still want to change the default values, just copy `/imgviewer/page/config_default.php` to `/imgviewer/page/config.php` and edit the values.
+| Setting        | Description |
+| ------------- | ------------- |
+| `$title`    | Title, which is displayed in the navigationbar and in the title of your browser |
+| `$dateformat`     | The date format used in the AIv ([supports all php parameters](http://php.net/manual/de/function.date.php#refsect1-function.date-parameters))    |
+| `$format`  | Array with all image types that should be displayed by the AIv     |
