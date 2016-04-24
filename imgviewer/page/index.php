@@ -1,7 +1,6 @@
 <?php
 error_reporting(0);
 
-
 // DEFAULT SETTINGS
 // PAGE TITLE //
 $title = "Atrox Imageviewer";
@@ -9,6 +8,8 @@ $title = "Atrox Imageviewer";
 $dateformat = "d-m-Y H:i:s.";
 // FORMAT WHITELIST
 $format = array('png', 'bmp', 'jpg', 'jpeg', 'ico', 'gif');
+// HEADER LINK //
+$headerlink = "#";
 
 
 include("config.php");

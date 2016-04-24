@@ -6,8 +6,8 @@
 				echo '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Navigation umschalten</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>';
 			}
 			?>
-			<a class="navbar-brand hidden-xs" href="<?php echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>"><?php echo $title; ?></a>
-			<a class="navbar-brand visible-xs" style="font-size: 15px;" href="<?php echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>"><?php echo $title; ?></a>
+			<a class="navbar-brand hidden-xs" href="<?php echo $headerlink ?>"><?php echo $title; ?></a>
+			<a class="navbar-brand visible-xs" style="font-size: 15px;" href="<?php echo $headerlink ?>"><?php echo $title; ?></a>
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">

@@ -7,3 +7,5 @@ $title = "Atrox Imageviewer";
 $dateformat = "d-m-Y H:i:s.";
 // FORMAT WHITELIST //
 $format = array('png', 'bmp', 'jpg', 'jpeg', 'ico', 'gif' );
+// HEADER LINK //
+$headerlink = "#";

@@ -20,10 +20,11 @@ All images have to be uploaded into the main directory (e.g. `/imgviewer/`) of t
 
 
 ## Configuration ##
-A configuration is not necessarily required. If you still want to change the default values, just copy `/imgviewer/page/config_default.php` to `/imgviewer/page/config.php` and edit the values.
+A configuration is not necessarily required. If you still want to change the default values, just copy or move `/imgviewer/page/config_default.php` to `/imgviewer/page/config.php` and edit the values.
 
 | Setting       | Description |
 |---------------|---------------|
 | `$title`      | Title, which is displayed in the navigationbar and in the title of your browser |
 | `$dateformat` | The date format used in the AIv ([supports all php parameters](http://php.net/manual/de/function.date.php#refsect1-function.date-parameters)) |
 | `$format`     | Array with all image types that should be displayed by the AIv     |
+| `$headerlink` | Link that is used in the header of AIv |
