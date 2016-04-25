@@ -36,7 +36,7 @@
 		exit;
 	}
 	?>
-	<img src="<?php echo $current_url ?>" class="img-thumbnail center-block" id="img">
+	<img src="<?php echo $current_url ?>" class="img-thumbnail img-responsive center-block" id="img">
 	<p class="filetime">Last modified: <?php echo date($dateformat, filemtime($file)); ?></p>
 	<?php include("footer.php"); ?>
 </div>
