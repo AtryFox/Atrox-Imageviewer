@@ -19,6 +19,15 @@ The Atrox Imageviewer (**AIv**) displays your screenshots or images on a nice an
 All images have to be uploaded into the main directory (e.g. `/imgviewer/`) of the AIv. If you now open up an image in this directory w/o its file extension, the AIv will appear. If you open up the same image w/ file extension, it will be displayed in the usual way.
 
 
+## Features ##
+- [x] Display images of various types 
+- [x] Automatic setup
+- [x] Download and embed image
+- [ ] Automatic update checker
+- [ ] Better mobile support
+- [ ] Zoomable images
+
+
 ## Configuration ##
 A configuration is not necessarily required. If you still want to change the default values, just copy or move `/imgviewer/page/config_default.php` to `/imgviewer/page/config.php` and edit the values.
 
