@@ -37,3 +37,13 @@ A configuration is not necessarily required. If you still want to change the def
 | `$dateformat` | The date format used in the AIv ([supports all php parameters](http://php.net/manual/de/function.date.php#refsect1-function.date-parameters)) |
 | `$format`     | Array with all image types that should be displayed by the AIv     |
 | `$headerlink` | Link that is used in the header of AIv |
+
+## Tips ##
+#### Force HTTPS ####
+If you want to force the use of HTTPS, you can just a the following lines to the **beginning** (not to the end!) of your `.htaccess` file.
+```
+RewriteEngine On
+RewriteCond %{SERVER_PORT} YOUR_HTTP_PORT
+RewriteRule ^(.*)$ https://YOUR_DOMAIN_NAME/$1 [R,L]
+```
+Replace `YOUR_HTTP_PORT` with your HTTP port (default: 80) and `YOUR_DOMAIN_NAME` with your domain, e.g. _yourdomain.tld_. This rule will rewrite all requests from `YOUR_DOMAIN_NAME:YOUR_HTTP_PORT` to `https://YOUR_DOMAIN_NAME`.
