@@ -82,3 +82,4 @@
 <script src="page/js/jquery.min.js"></script>
 <script src="page/js/bootstrap.min.js"></script>
 <script src="page/js/clipboard.min.js"></script>
+<script src="page/js/main.min.js"></script>
