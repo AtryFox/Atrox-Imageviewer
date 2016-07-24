@@ -14,3 +14,34 @@ function updateCode() {
     $("#htmlCode").text(html);
     $("#bbCode").text(bbcode);
 }
+
+function showTooltip(id, text) {
+    $(id).tooltip({title: text, placement: 'top', trigger: 'manuel'});
+    $(id).tooltip('show');
+    setTimeout(function () {
+        $(id).tooltip('hide');
+    }, 1000);
+}
+
+var htmlClip = new Clipboard('#copyHtml');
+var bbcodeClip = new Clipboard('#copyBbcode');
+
+htmlClip.on('success', function(e) {
+    showTooltip('#copyHtml', 'Copied to clipboard!');
+    e.clearSelection();
+});
+
+htmlClip.on('error', function(e) {
+    showTooltip('#copyHtml', 'Press ctrl+c to copy.');
+});
+
+bbcodeClip.on('success', function(e) {
+    showTooltip('#copyBbcode', 'Copied to clipboard!');
+    e.clearSelection();
+});
+
+bbcodeClip.on('error', function(e) {
+    showTooltip('#copyBbcode', 'Press ctrl+c to copy.');
+});
+
+

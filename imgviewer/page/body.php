@@ -60,10 +60,14 @@
 					</label>
 				</div>
 
-				<h4>HTML</h4>
+				<h4>HTML
+					<small><a href="#" data-clipboard-target="#htmlCode" id="copyHtml">copy to clipboard</a></small>
+				</h4>
 				<pre id="htmlCode">&lt;img src="<?php echo $current_img ?>"&gt;</pre>
 				<br>
-				<h4>BBCode</h4>
+				<h4>BBCode
+					<small><a href="#" data-clipboard-target="#bbCode" id="copyBbcode">copy to clipboard</a></small>
+				</h4>
 				<pre id="bbCode">[img]<?php echo $current_img ?>[/img]</pre>
 			</div>
 			<div class="modal-footer">
@@ -77,5 +81,4 @@
 <!-- ALL THE JAVA SCRIPT FILES -->
 <script src="page/js/jquery.min.js"></script>
 <script src="page/js/bootstrap.min.js"></script>
-<script src="page/js/main.js"></script>
-
+<script src="page/js/clipboard.min.js"></script>
