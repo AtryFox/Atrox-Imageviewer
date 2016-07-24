@@ -10,6 +10,8 @@ $dateformat = "d-m-Y H:i:s.";
 $format = array('png', 'bmp', 'jpg', 'jpeg', 'ico', 'gif');
 // HEADER LINK //
 $headerlink = "#";
+// THEME LINK //
+$theme = "";
 
 
 include("config.php");

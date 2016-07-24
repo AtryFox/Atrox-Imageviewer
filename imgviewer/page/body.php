@@ -59,7 +59,7 @@
 						page
 					</label>
 				</div>
-
+				<br>
 				<h4>HTML
 					<small><a href="#" data-clipboard-target="#htmlCode" id="copyHtml">copy to clipboard</a></small>
 				</h4>
