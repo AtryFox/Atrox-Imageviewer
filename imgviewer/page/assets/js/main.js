@@ -32,7 +32,7 @@ $('.options').on('click', function () {
 
     $('#htmlCode').text(html);
     $('#bbCode').text(bbcode);
-})
+});
 
 htmlClip.on('success', function(e) {
     $('#copyHtml').showTooltip('Copied to clipboard!');
@@ -49,7 +49,7 @@ bbcodeClip.on('success', function(e) {
 });
 
 bbcodeClip.on('error', function() {
-    $('#copyBbcode').showTooltip('Press ctrl+c to copy.')
+    $('#copyBbcode').showTooltip("Press ctrl+c to copy.")
 });
 
 
