@@ -55,18 +55,18 @@
 				<h4>Options</h4>
 				<div class="checkbox">
 					<label>
-						<input type="checkbox" onchange="updateCode()" id="includeLink"> include link to this
+						<input type="checkbox" id="includeLink" class="options"> include link to this
 						page
 					</label>
 				</div>
 				<br>
 				<h4>HTML
-					<small><a href="#" data-clipboard-target="#htmlCode" id="copyHtml">copy to clipboard</a></small>
+					<small><a role="button" data-clipboard-target="#htmlCode" id="copyHtml">copy to clipboard</a></small>
 				</h4>
 				<pre id="htmlCode">&lt;img src="<?php echo $current_img ?>"&gt;</pre>
 				<br>
 				<h4>BBCode
-					<small><a href="#" data-clipboard-target="#bbCode" id="copyBbcode">copy to clipboard</a></small>
+					<small><a role="button" data-clipboard-target="#bbCode" id="copyBbcode">copy to clipboard</a></small>
 				</h4>
 				<pre id="bbCode">[img]<?php echo $current_img ?>[/img]</pre>
 			</div>
