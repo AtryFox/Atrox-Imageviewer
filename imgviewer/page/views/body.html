@@ -1,0 +1,52 @@
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			{{#available}}
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Navigation umschalten</span> <span class="icon-bar"></span>
+					<span class="icon-bar"></span> <span class="icon-bar"></span></button>
+			{{/available}}
+			<a class="navbar-brand hidden-xs" href="{{headerlink}}">{{title}}</a>
+			<a class="navbar-brand visible-xs" style="font-size: 15px;" href="{{headerlink}}">{{title}}</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				{{#available}}
+					<li><a href="{{current_url}}">Image</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#embedImage">Embed</a></li>
+					<li><a href="page/download.php?image={{file}}" type="application/octet-stream">Download</a></li>
+				{{/available}}
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	{{^available}}
+		{{#show_welcome}}
+			{{>welcome}}
+		{{/show_welcome}}
+		{{^show_welcome}}
+			<h3>404. Requested file not found.</h3><br>
+		{{/show_welcome}}
+	{{/available}}
+
+
+	{{#available}}
+		<img src="{{current_url}}" class="img-thumbnail img-responsive center-block" id="img">
+		<p class="filetime">Last modified: {{last_modified}}</p>
+		{{> footer}}
+	{{/available}}
+
+
+</div>
+
+{{#available}}
+	{{> embed_modal}}
+{{/available}}
+
+<!-- ALL THE JAVA SCRIPT FILES -->
+<script src="page/assets/js/jquery.min.js"></script>
+<script src="page/assets/js/bootstrap.min.js"></script>
+<script src="page/assets/js/clipboard.min.js"></script>
+<script src="page/assets/js/main.min.js"></script>
