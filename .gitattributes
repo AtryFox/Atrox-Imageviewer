@@ -1,3 +1,3 @@
-imgviewer/page/css/*.min.css linguist-vendored
-imgviewer/page/js/*.min.css linguist-vendored
-imgviewer/page/src/* linguist-vendored
+imgviewer/page/assets/css/*.min.css linguist-vendored
+imgviewer/page/assets/js/*.min.css linguist-vendored
+imgviewer/page/assets/src/* linguist-vendored
