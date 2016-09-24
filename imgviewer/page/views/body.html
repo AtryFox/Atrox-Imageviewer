@@ -13,7 +13,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				{{#available}}
 					<li><a href="{{current_url}}">Image</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#embedImage">Embed</a></li>
+					<li><a role="button" data-toggle="modal" data-target="#embedImage">Embed</a></li>
 					<li><a href="page/download.php?image={{file}}" type="application/octet-stream">Download</a></li>
 				{{/available}}
 			</ul>
@@ -22,6 +22,8 @@
 </div>
 
 <div class="container">
+	<noscript><div class="alert alert-danger"><b>Warning!</b> This page requires JavaScript in order to function correctly.</div></noscript>
+
 	{{^available}}
 		{{#show_welcome}}
 			{{>welcome}}
