@@ -65,6 +65,10 @@ if ($_GET["image"] == "welcome" && file_exists("views/welcome.html")) {
 	$data->directory = dirname( __DIR__);
 }
 
+if ($_GET["image"] == "home") {
+	$data->show_home = true;
+}
+
 $data->pageURL = $pageURL;
 $data->current_img = explode("?", $pageURL)[0];
 $data->current_url = explode("?", $pageURL)[0] . "." . $file_type;

@@ -38,6 +38,10 @@ hr {
     margin-bottom: 3px;
 }
 
+.text-only {
+    margin-bottom: 50px;
+}
+
 #xs-navbar {
     font-size: 15px;
 }

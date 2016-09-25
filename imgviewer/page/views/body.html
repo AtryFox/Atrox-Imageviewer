@@ -22,14 +22,22 @@
 </div>
 
 <div class="container">
-	<noscript><div class="alert alert-danger"><b>Warning!</b> This page requires JavaScript in order to function correctly.</div></noscript>
+	<noscript>
+		<div class="alert alert-danger"><b>Warning!</b> This page requires JavaScript in order to function correctly.
+		</div>
+	</noscript>
 
 	{{^available}}
 		{{#show_welcome}}
 			{{>welcome}}
 		{{/show_welcome}}
+		{{#show_home}}
+			<h3 class="text-only">No image selected.</h3>
+		{{/show_home}}
 		{{^show_welcome}}
-			<h3>404. Requested file not found.</h3><br>
+			{{^show_home}}
+				<h3 class="text-only">404. Requested file not found.</h3>
+			{{/show_home}}
 		{{/show_welcome}}
 	{{/available}}
 
@@ -37,9 +45,9 @@
 	{{#available}}
 		<img src="{{current_url}}" class="img-thumbnail img-responsive center-block" id="img">
 		<p class="filetime">Last modified: {{last_modified}}</p>
-		{{> footer}}
 	{{/available}}
 
+	{{> footer}}
 
 </div>
 

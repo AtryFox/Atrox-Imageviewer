@@ -22,6 +22,6 @@ RewriteRule (.*)                    index.php?image=$1 [QSA,L]";
 
 	header("Location: welcome");
 } else {
-	header("Location: notfound");
+	header("Location: home");
 }
 
