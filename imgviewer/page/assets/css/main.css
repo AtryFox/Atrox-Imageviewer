@@ -29,4 +29,15 @@ hr {
 .credit iframe {
     margin: 0 auto;
     display: block;
+    width: 80px;
+    height: 20px;
+    border: 0px;
+}
+
+.credit p {
+    margin-bottom: 3px;
+}
+
+#xs-navbar {
+    font-size: 15px;
 }
